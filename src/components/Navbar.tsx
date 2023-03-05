@@ -6,10 +6,12 @@ import Link from './Link'
 import { Page } from '../shared/types'
 import { ActionButton } from '../shared'
 
-type Props = {}
+type Props = {
+  selectedPage: Page,
+  setSelectedPage: (value: Page) => void
+}
 
-const Navbar = (props: Props) => {
-  const [selectedPage, setSelectedPage] = useState<Page>(Page.Home)
+const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const [toggle, setToggle] = useState<boolean>(false)
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
 
@@ -47,7 +49,7 @@ const Navbar = (props: Props) => {
             </nav>
 
             <div className={`${flexBetween} gap-8`}>
-              <p>Sign In</p>
+              <p className='duration-300 hover:text-primary-300 cursor-pointer'>Sign In</p>
               <ActionButton setSelectedPage={setSelectedPage}>
                 Become a Member
               </ActionButton>

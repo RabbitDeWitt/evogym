@@ -1,10 +1,82 @@
-import React from 'react'
+import { ActionButton } from '../shared'
+import { Page } from '../shared/types'
+import { HomePageText, HomePageGraphic } from '../assets'
+import { Sponsors } from '../constants'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { motion } from 'framer-motion'
 
-const Hero = () => {
+
+type Props = {
+  setSelectedPage: (value: Page) => void
+}
+
+const Hero = ({ setSelectedPage }: Props) => {
   return (
-    <div>
-      Hero
-    </div>
+    <section id='home' className='gap-16 bg-gray-20 pb-10 pt-[88px] md:h-full md:pb-0'>
+      <motion.div
+        className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
+        onViewportEnter={() => setSelectedPage(Page.Home)}
+      >
+        <div className='z-10 md:basis-3/5'>
+
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 }
+            }}
+          >
+            <div className='relative'>
+              <div className='before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext'>
+                <img src={HomePageText} alt="home-page-text" />
+              </div>
+            </div>
+
+            <p className='mt-8 text-sm max-w-[480px]'>
+              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
+              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Body Now.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className='mt-8 flex items-center gap-8'
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 }
+            }}
+          >
+            <ActionButton setSelectedPage={setSelectedPage}>
+              Join Now
+            </ActionButton>
+
+            <AnchorLink className='text-sm font-bold text-primary-500 underline hover:text-secondary-500' onClick={() => setSelectedPage(Page.ContactUs)} href={`${Page.ContactUs}`}>
+              <p>Learn More</p>
+            </AnchorLink>
+          </motion.div>
+        </div>
+
+        <div className='flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
+          <img src={HomePageGraphic} alt="home-page-graphic" />
+        </div>
+      </motion.div>
+
+      <div className='hidden h-[150px] w-full bg-primary-100 py-10 md:flex'>
+        <div className='mx-auto w-5/6 flex justify-between items-center'>
+          {Sponsors.map(({ logo, alt }, index) => (
+            <img key={index} src={logo} alt={alt} className='max-w-[113px] object-contain' />
+          ))}
+
+        </div>
+      </div>
+    </section>
   )
 }
 

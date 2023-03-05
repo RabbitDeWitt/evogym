@@ -1,3 +1,5 @@
+import { SponsorForbes, SponsorFortune, SponsorRedBull } from "../assets"
+
 export const navLinks = [
   {
     title: 'Home'
@@ -10,5 +12,20 @@ export const navLinks = [
   },
   {
     title: 'Contact Us'
+  }
+]
+
+export const Sponsors = [
+  {
+    logo: SponsorForbes,
+    alt: 'Forbes'
+  },
+  {
+    logo: SponsorFortune,
+    alt: 'Fortune'
+  },
+  {
+    logo: SponsorRedBull,
+    alt: 'Red Bull'
   }
 ]
