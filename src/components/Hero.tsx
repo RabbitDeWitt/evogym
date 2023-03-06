@@ -1,7 +1,7 @@
 import { ActionButton } from '../shared'
 import { Page } from '../shared/types'
 import { HomePageText, HomePageGraphic } from '../assets'
-import { Sponsors } from '../constants'
+import { sponsors } from '../constants'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion } from 'framer-motion'
 
@@ -70,7 +70,7 @@ const Hero = ({ setSelectedPage }: Props) => {
 
       <div className='hidden h-[150px] w-full bg-primary-100 py-10 md:flex'>
         <div className='mx-auto w-5/6 flex justify-between items-center'>
-          {Sponsors.map(({ logo, alt }, index) => (
+          {sponsors.map(({ logo, alt }, index) => (
             <img key={index} src={logo} alt={alt} className='max-w-[113px] object-contain' />
           ))}
 

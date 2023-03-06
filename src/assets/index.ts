@@ -1,5 +1,7 @@
 import Arrow from './Arrow.png'
 import HomePageGraphic from './HomePageGraphic.png'
+import BenefitsPageGraphic from './BenefitsPageGraphic.png'
+import ContactUsPageGraphic from './ContactUsPageGraphic.png'
 import HomePageText from './HomePageText.png'
 import image1 from './image1.png'
 import image2 from './image2.png'
@@ -16,6 +18,8 @@ import SponsorRedBull from './SponsorRedBull.png'
 export {
   Arrow,
   HomePageGraphic,
+  BenefitsPageGraphic,
+  ContactUsPageGraphic,
   HomePageText,
   image1,
   image2,

@@ -30,7 +30,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
   const flexBetween = "flex justify-between items-center"
   return (
-    <header className={`${flexBetween} fixed top-0 z-30 w-full p-6 ${!isTopOfPage ? 'bg-primary-100 drop-shadow-lg' : 'bg-transparent'}`}>
+    <header className={`${flexBetween} fixed top-0 z-30 w-full p-6 ${!isTopOfPage ? 'bg-primary-100' : 'bg-transparent'}`}>
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           <img src={Logo} alt="logo" />
@@ -79,18 +79,16 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
           </button>
         </div>
 
-        <div>
-          <ul className={`flex flex-col ml-[25%] gap-10 text-2xl`}>
-            {navLinks.map(({ title }, index) => (
-              <Link
-                key={index}
-                page={title}
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-            ))}
-          </ul>
-        </div>
+        <ul className={`flex flex-col ml-[25%] gap-10 text-2xl`}>
+          {navLinks.map(({ title }, index) => (
+            <Link
+              key={index}
+              page={title}
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          ))}
+        </ul>
       </div>
 
     </header>

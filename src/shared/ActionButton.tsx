@@ -1,9 +1,9 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Page } from "./types"
 
 type Props = {
-  children: React.ReactNode,
+  children: ReactNode,
   setSelectedPage: (value: Page) => void
 }
 

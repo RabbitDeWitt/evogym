@@ -5,10 +5,10 @@ import { Page } from "./shared/types";
 function App() {
   const [selectedPage, setSelectedPage] = useState<Page>(Page.Home)
   return (
-    <div className="app bg-gray-20">
+    <div className="app">
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Hero setSelectedPage={setSelectedPage} />
-
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
