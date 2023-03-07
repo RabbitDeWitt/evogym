@@ -57,7 +57,7 @@ const Hero = ({ setSelectedPage }: Props) => {
               Join Now
             </ActionButton>
 
-            <AnchorLink className='text-sm font-bold text-primary-500 underline hover:text-secondary-500' onClick={() => setSelectedPage(Page.ContactUs)} href={`${Page.ContactUs}`}>
+            <AnchorLink className='text-sm font-bold text-primary-500 underline hover:text-secondary-500' onClick={() => setSelectedPage(Page.ContactUs)} href={`#${Page.ContactUs}`}>
               <p>Learn More</p>
             </AnchorLink>
           </motion.div>

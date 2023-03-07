@@ -83,3 +83,15 @@ export const classes = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
 ]
+
+export const footerLinks = [
+  {
+    link: 'Massa orci senectus'
+  },
+  {
+    link: 'Et gravida id et etiam'
+  },
+  {
+    link: 'llamcorper vivamus'
+  }
+]

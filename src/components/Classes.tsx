@@ -13,7 +13,7 @@ type Class = {
 }
 
 const ClassCard = ({ img, name, description }: Class) => {
-  const overlayStyles = 'p-5 absolute z-30 flex h-full w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 duration-500 hover:opacity-90'
+  const overlayStyles = 'p-5 absolute z-[20] flex h-full w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 duration-500 hover:opacity-90'
   return (
     <li className="relative mx-5 inline-block w-[450px] object-contain">
       <div className={`${overlayStyles}`}>
