@@ -1,8 +1,15 @@
 import React from 'react'
+import { Page } from '../shared/types'
 
-const Contact = () => {
+type Props = {
+  setSelectedPage: (value: Page) => void
+}
+
+const Contact = ({ setSelectedPage }: Props) => {
   return (
-    <div>Contact</div>
+    <section>
+      Contact
+    </section>
   )
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Benefits, Hero, Navbar } from "./components";
+import { Benefits, Classes, Contact, Hero, Navbar } from "./components";
 import { Page } from "./shared/types";
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Hero setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <Classes setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
     </div>
   );
 }
