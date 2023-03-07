@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/evogym/static/css/main.a9974fdc.css",
+    "main.js": "/evogym/static/js/main.cf21d58b.js",
+    "static/js/787.1572f9a8.chunk.js": "/evogym/static/js/787.1572f9a8.chunk.js",
+    "static/media/image4.png": "/evogym/static/media/image4.2d1e494f729dadf8e1ef.png",
+    "static/media/image6.png": "/evogym/static/media/image6.3e4b96cb1a61baf154be.png",
+    "static/media/image3.png": "/evogym/static/media/image3.c175348892ea4f0aa60c.png",
+    "static/media/image2.png": "/evogym/static/media/image2.e94f50c411af217c548e.png",
+    "static/media/image5.png": "/evogym/static/media/image5.198f84b59b230ce3e6b5.png",
+    "static/media/image1.png": "/evogym/static/media/image1.fa9e1496acf9cac66c12.png",
+    "static/media/HomePageGraphic.png": "/evogym/static/media/HomePageGraphic.73a6d645a25fd03b34af.png",
+    "static/media/BenefitsPageGraphic.png": "/evogym/static/media/BenefitsPageGraphic.feee8fadffdda6f5f65a.png",
+    "static/media/ContactUsPageGraphic.png": "/evogym/static/media/ContactUsPageGraphic.cb6b05e82d856d0e1f22.png",
+    "static/media/HomePageText.png": "/evogym/static/media/HomePageText.501df4a501b9192320fd.png",
+    "index.html": "/evogym/index.html",
+    "main.a9974fdc.css.map": "/evogym/static/css/main.a9974fdc.css.map",
+    "main.cf21d58b.js.map": "/evogym/static/js/main.cf21d58b.js.map",
+    "787.1572f9a8.chunk.js.map": "/evogym/static/js/787.1572f9a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9974fdc.css",
+    "static/js/main.cf21d58b.js"
+  ]
+}
